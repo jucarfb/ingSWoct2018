@@ -127,7 +127,7 @@ public class Principal extends javax.swing.JFrame {
         LocalDate fechaactual=LocalDate.now();
         
         Period periodo=Period.between(fechanacimiento,fechaactual);
-        String calculo=("LA EDAD ACTUAL ES: "+periodo.getYears()+" Años, " +periodo.getMonths()+" Meses "+" y "+periodo.getDays()+" Dias ");
+        String calculo=("LA EDAD ACTUAL ES: "+periodo.getYears()+" Años, " +periodo.getMonths()+ " Meses y "+periodo.getDays()+" Dias. "+" Total de Meses: "+periodo.toTotalMonths());
         TxtCalculoEdad.setText(calculo);
         
         //Escribir en archivo
